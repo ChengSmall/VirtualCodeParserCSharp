@@ -10,4 +10,4 @@
 
 ## 使用说明
 
-[文档](CSharpVirtualCodeParser\Document)
+[文档](CSharpVirtualCodeParser/Document)

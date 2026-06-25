@@ -14,6 +14,7 @@ namespace Cheng.VirtualCodeParser
         /// </summary>
         public enum Type : byte
         {
+
             #region 逻辑
             /// <summary>
             /// 按位非
@@ -46,23 +47,60 @@ namespace Cheng.VirtualCodeParser
             #endregion
 
             #region 算数
+
             /// <summary>
             /// 算数右移
             /// </summary>
             NumRightMove,
+
             /// <summary>
             /// 算术左移
             /// </summary>
             NumLeftMove,
 
+            /// <summary>
+            /// 取反
+            /// </summary>
             Neg,
+
+            /// <summary>
+            /// 加法
+            /// </summary>
             Add,
+
+            /// <summary>
+            /// 减法
+            /// </summary>
             Sub,
+
+            /// <summary>
+            /// 乘法
+            /// </summary>
             Mult,
+
+            /// <summary>
+            /// 除法
+            /// </summary>
             Dev,
+
+            /// <summary>
+            /// 取余
+            /// </summary>
             Mod,
+
+            /// <summary>
+            /// 绝对值
+            /// </summary>
             Abs,
+
+            /// <summary>
+            /// 返回最大值
+            /// </summary>
             Max,
+
+            /// <summary>
+            /// 返回最小值
+            /// </summary>
             Min,
             #endregion
 
@@ -240,7 +278,7 @@ namespace Cheng.VirtualCodeParser
                     if (signed) fa = (float)a;
                     else fa = (float)((int)a);
                     re = *(uint*)&fa;
-                    break;               
+                    break;
 
                 default:
                     re = default;
