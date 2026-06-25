@@ -1,0 +1,16 @@
+﻿# 忽略本地文件
+
+.vs
+
+**/bin/**
+**/obj/**
+
+*.exe
+*.dll
+*.png
+*.jpg
+*.jpeg
+
+# 忽略测试项目
+
+TestPrograms
